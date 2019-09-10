@@ -26,6 +26,7 @@ var syncOptions = {
 
 // If running a test, set syncOptions.force to true clearing the `testdb`
 if (process.env.NODE_ENV === "test") {
+  console.log(process.env.NODE_ENV);
   syncOptions.force = true;
 }
 
